@@ -31,20 +31,56 @@ nav {
     align-items: center;
     width: 635px;
     height: 256px;
-    border: 1px solid;
     color: white;
-    margin: auto;
+    margin: 0;
 }
 .tailor{
     font-size: 60px;
     width: 635px;
     height: 160px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 .buttonLearn{
+    text-decoration: none;
+    border: #ffffff;
     width: 162px;
     height: 56px;
     background-color: rgb(68, 255, 161);
     color: rgb(36,5,62);
     justify-content: center;
     text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.page{
+    display: flex;
+    width: 1440px;
+    height: 608px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: auto;
+    gap: 20px;
+    position: relative;
+}
+.pattern-image {
+    width: 270px; 
+    height: 215px;
+}
+.pattern2-image {
+    width: 170px; 
+    height: 115px;
+}
+.pattern2{
+    position: absolute;
+    bottom: 350px;
+    right: 230px;
+}
+.phone{
+    margin-top: 200px;
+    height: 767px;
+    width: 441px;
+    justify-content: center;
+
 }
