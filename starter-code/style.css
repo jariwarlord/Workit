@@ -24,6 +24,20 @@ nav {
     color: white;       
      
 }
+.buttonApply2{
+    text-decoration: none;
+    width: 207px;
+    height: 56px;
+    margin-left: 64px;
+    color: rgb(36, 5, 62);
+    border-top: #ffffff;
+    border-right: #ffffff;
+    border-left: #ffffff; 
+    background-color: rgb(68, 255, 161);   
+    font-weight: 600;    
+    margin-top: 30px;
+    font-size: 16px;
+}
 .hero{
     display: flex;
     flex-direction: column;
@@ -98,6 +112,8 @@ nav {
     gap: 0px;
     padding-left: 10%;
     padding-right: 10%;
+    color:rgb(36, 5, 62); 
+    width: 100%;
 }
   
   .feature-item {
@@ -133,3 +149,67 @@ nav {
     color: #666666;
     max-width: 250px; 
   }
+  .founder {
+    position: relative;
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 1440px; 
+    height: 691;
+    margin: auto;
+    border-radius: 8px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    overflow: hidden; 
+  }
+  
+  .founder-image {
+    position: absolute;
+    object-fit: cover;
+    z-index: 1;
+    top: 80px; 
+    left: -20px; 
+    width: 120px; 
+    border-radius: 50%; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+    height: 477px;
+    width: 477px;
+  }
+  
+  .founder-info {
+    
+    margin-left: 370px;
+    margin-bottom: 0px;
+    width: 730px;
+    height: 411px;
+    position: relative;
+    z-index: 2;
+    margin-top: 230px; 
+    color: white;
+    background-color: rgb(36, 5, 62);
+  }
+  
+  .founder-info h2 {
+    padding-top: 64px;
+    padding-left: 64px;
+    margin: 0;
+    font-size: 46px;
+  }
+  
+  .founder-info p {
+    padding-left: 64px;
+    padding-top: 30px;
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: 200;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    height: 324.61px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+  }
+  
