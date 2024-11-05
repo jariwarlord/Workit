@@ -1,6 +1,7 @@
 body{
-    background-color: #ffffff;
+    background-color: rgb(36, 5, 62);
     background-size: 100% 
+    
     
    
 }
@@ -24,20 +25,6 @@ nav {
     color: white;       
      
 }
-.buttonApply2{
-    text-decoration: none;
-    width: 207px;
-    height: 56px;
-    margin-left: 64px;
-    color: rgb(36, 5, 62);
-    border-top: #ffffff;
-    border-right: #ffffff;
-    border-left: #ffffff; 
-    background-color: rgb(68, 255, 161);   
-    font-weight: 600;    
-    margin-top: 30px;
-    font-size: 16px;
-}
 .hero{
     display: flex;
     flex-direction: column;
@@ -48,8 +35,12 @@ nav {
     height: 256px;
     color: white;
     margin: 0;
+    padding-left: 50px;
 }
 .tailor{
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
     padding-top: 150px;
     font-size: 60px;
     width: 635px;
@@ -77,9 +68,9 @@ nav {
     height: 608px;
     align-items: flex-start;
     justify-content: flex-start;
-    margin: auto;
     gap: 20px;
     position: relative;
+    width: 100%;
 }
 .pattern-image {
     width: 270px; 
@@ -106,25 +97,25 @@ nav {
 .features {
     background-color: white;
     display: flex;
-    justify-content: space-around; 
-    margin-top: 0px; 
-    max-width: 1200px; 
-    gap: 0px;
-    padding-left: 10%;
-    padding-right: 10%;
-    color:rgb(36, 5, 62); 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 0;
     width: 100%;
+    gap: 20px; 
+    color: rgb(36, 5, 62);
+    flex-wrap: wrap;
 }
-  
-  .feature-item {
+.feature-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     width: 30%; 
-  }
-  
-  .circle {
+    max-width: 250px; 
+}
+
+.circle {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,18 +128,18 @@ nav {
     height: 40px;
     margin-bottom: 15px;
     border: 1px solid rgb(36, 5, 62);
-  }
-  
-  .feature-item h3 {
+}
+
+.feature-item h3 {
     font-size: 24px;
     margin: 10px 0; 
-  }
-  
-  .feature-item p {
+}
+
+.feature-item p {
     font-size: 16px;
     color: #666666;
     max-width: 250px; 
-  }
+}
   .founder {
     position: relative;
     background-color: #f0f0f0;
@@ -159,9 +150,20 @@ nav {
     border-radius: 8px; 
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
     overflow: hidden; 
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
-  
-  .founder-image {
+  .founder-box{
+    padding-left: 10%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0%;
+    margin-bottom: 0px;
+    
+  }
+  .founder-image { 
+    margin-left: 10%;
     position: absolute;
     object-fit: cover;
     z-index: 1;
@@ -172,12 +174,14 @@ nav {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
     height: 477px;
     width: 477px;
+    bottom: -20px;
   }
   
   .founder-info {
     
     margin-left: 370px;
     margin-bottom: 0px;
+    padding-bottom: 0px;
     width: 730px;
     height: 411px;
     position: relative;
@@ -185,7 +189,26 @@ nav {
     margin-top: 230px; 
     color: white;
     background-color: rgb(36, 5, 62);
+    bottom: -20px;
   }
+  .buttonApply2{
+    text-decoration: none;
+    width: 207px;
+    height: 56px;
+    margin-left: 64px;
+    color: rgb(36, 5, 62);
+    border-top: #ffffff;
+    border-right: #ffffff;
+    border-left: #ffffff; 
+    border-bottom: #ffffff;
+    background-color: rgb(68, 255, 161);   
+    font-weight: 600;    
+    margin-top: 30px;
+    font-size: 16px;
+    position: relative;    
+    right: 0px;
+    bottom: 150px;
+}
   
   .founder-info h2 {
     padding-top: 64px;
@@ -202,6 +225,7 @@ nav {
     font-weight: 200;
   }
   footer{
+    background-color: white;
     display: flex;
     flex-direction: column;
     width: 1440px;
@@ -211,5 +235,47 @@ nav {
     margin: auto;
     text-align: center;
     width: 100%;
+    padding: 20px;
   }
-  
+  .logo{
+    padding-bottom: 60px;
+  }
+  @media (min-width: 1200px) {
+    .page {
+        width: 1440px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .features {
+        flex-direction: column;
+    }
+    .hero {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .hero {
+        width: 100%;
+        padding: 10px;
+    }
+    .features {
+        flex-direction: column;
+        padding-right: 0;
+    }
+    footer {
+        padding: 10px;
+    }
+    .feature-item {
+        width: 100%; 
+        max-width: none; 
+        margin: 0 10px; 
+    }
+}
